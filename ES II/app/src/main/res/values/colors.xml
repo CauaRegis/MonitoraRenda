@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="branco">#FFFFFF</color>
+    <color name="fundo_2">#F3F3F3</color>
+    <color name="nav_inativa">#F0F0F0</color>
+    <color name="cinza_claro">#EDEDED</color>
+    <color name="cinza_medio">#8C8C8C</color>
+    <color name="texto_2">#6B6B6B</color>
+    <color name="charcoal">#303131</color>
+    <color name="preto">#0B0B0B</color>
+    <color name="assinatura">#C5FF20</color>
+    <color name="abaixo_do_custo">#FF5A36</color>
+</resources>
