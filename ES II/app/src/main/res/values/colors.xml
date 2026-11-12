@@ -10,4 +10,16 @@
     <color name="preto">#0B0B0B</color>
     <color name="assinatura">#C5FF20</color>
     <color name="abaixo_do_custo">#FF5A36</color>
+    <!-- Monitora Renda: cores do Figma -->
+    <color name="mr_white">#FFFFFF</color>
+    <color name="mr_surface_muted">#F3F3F3</color>
+    <color name="mr_divider">#EDEDED</color>
+    <color name="mr_inverse">#0B0B0B</color>
+    <color name="mr_inverse_raised">#303131</color>
+    <color name="mr_lime">#C5FF20</color>
+    <color name="mr_coral">#FF5A36</color>
+    <color name="mr_coral_text">#C8341A</color>
+    <color name="mr_text">#0B0B0B</color>
+    <color name="mr_text_secondary">#6B6B6B</color>
+    <color name="mr_text_tertiary">#8C8C8C</color>
 </resources>

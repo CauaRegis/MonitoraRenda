@@ -1,8 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MonitoraRenda" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.MonitoraRenda" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/mr_lime</item>
+        <item name="colorOnPrimary">@color/mr_text</item>
+        <item name="android:windowBackground">@color/mr_white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.MonitoraRenda" parent="Base.Theme.MonitoraRenda" />
