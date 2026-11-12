@@ -22,6 +22,19 @@
             android:paddingEnd="24dp"
             android:paddingBottom="128dp">
 
+            <TextView
+                android:id="@+id/tvDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Carregar dados de demonstração"
+                android:textColor="@color/mr_text_secondary"
+                android:textSize="13sp" />
+
             <!-- Cabeçalho: saudação + avatar -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,12 +142,14 @@
                         <ImageView
                             android:layout_width="18dp"
                             android:layout_height="18dp"
+                            android:id="@+id/icEnd"
                             android:src="@drawable/ic_stop" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
+                            android:id="@+id/tvEndLabel"
                             android:text="Encerrar"
                             android:textColor="@color/mr_text"
                             android:textSize="14sp"
@@ -142,6 +157,15 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/mr_text_secondary"
+                android:textSize="13sp"
+                android:visibility="gone" />
 
             <!-- Card principal (preto) -->
             <com.google.android.material.card.MaterialCardView
@@ -351,6 +375,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
+                            android:id="@+id/tvWaitLabel"
                             android:text="em espera hoje, sem pagamento"
                             android:textColor="@color/mr_text_secondary"
                             android:textSize="14sp" />
