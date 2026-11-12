@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/btnVoltar"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:src="@drawable/ic_back" android:scaleType="center"
+                android:clickable="true" android:focusable="true"
+                android:contentDescription="Voltar" />
+
+            <LinearLayout
+                android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1"
+                android:orientation="horizontal" android:background="@drawable/bg_progress_track"
+                android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="2" android:background="@drawable/bg_progress_fill" />
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="2 de 4" android:textColor="@color/texto_2" android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Custo por km" android:textColor="@color/preto"
+            android:textSize="32sp" android:textStyle="bold" android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Gastos que crescem conforme você roda." android:textColor="@color/texto_2"
+            android:textSize="16sp" android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card_light"
+            android:padding="16dp" android:layout_marginTop="20dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Combustível" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="40 km/l · R$ 6,00 o litro" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,15" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Manutenção" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Óleo, filtros e revisão: R$ 300 a cada 3.000 km"
+                        android:textColor="@color/texto_2" android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,10" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Pneus" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="R$ 480 o par, duram 12.000 km" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,04" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Kit relação" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="R$ 300 a cada 15.000 km" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,02" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Custo por km"
+                    android:textColor="@color/preto" android:textSize="15sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,31" android:textColor="@color/preto"
+                    android:textSize="22sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnContinuar"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:gravity="center" android:text="Continuar"
+            android:textColor="@color/preto" android:textSize="17sp" android:textStyle="bold"
+            android:background="@drawable/bg_button_verde"
+            android:clickable="true" android:focusable="true" android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
