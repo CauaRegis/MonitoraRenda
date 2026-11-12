@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/btnVoltar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_back"
+                android:scaleType="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Voltar" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_progress_track"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp">
+
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:background="@drawable/bg_progress_fill" />
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 de 4"
+                android:textColor="@color/texto_2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seu veículo, seus custos"
+            android:textColor="@color/preto"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_chip"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_doc"
+                android:contentDescription="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tudo com os seus números"
+                android:textColor="@color/preto"
+                android:textSize="13sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardMoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_dark"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Moto" android:textColor="@color/branco"
+                    android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="160 cc · 40 km/l" android:textColor="@color/cinza_medio"
+                    android:textSize="13sp" android:layout_marginTop="2dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 0,31 por km" android:textColor="@color/assinatura"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_circle_verde">
+                <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_moto"
+                    android:contentDescription="Moto" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardCarro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_light"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Carro" android:textColor="@color/preto"
+                    android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Consumo, pneu, seguro e IPVA" android:textColor="@color/texto_2"
+                    android:textSize="13sp" android:layout_marginTop="2dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Configurar" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_circle">
+                <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_carro"
+                    android:contentDescription="Carro" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardBike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_light"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Bike" android:textColor="@color/preto"
+                    android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Manutenção e desgaste" android:textColor="@color/texto_2"
+                    android:textSize="13sp" android:layout_marginTop="2dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Configurar" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_circle">
+                <ImageView android:layout_width="26dp" android:layout_height="26dp"
+                    android:layout_gravity="center" android:src="@drawable/ic_bike"
+                    android:contentDescription="Bike" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnContinuar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Continuar"
+            android:textColor="@color/preto"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button_verde"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

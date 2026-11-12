@@ -1,11 +1,16 @@
 package com.example.monitorarenda;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class BoasVindasActivity extends AppCompatActivity {
 
@@ -21,8 +26,8 @@ public class BoasVindasActivity extends AppCompatActivity {
         TextView btnJaTenhoConta = findViewById(R.id.btnJaTenhoConta);
 
         btnComecar.setOnClickListener(v -> {
-            Toast.makeText(this, "Começar", Toast.LENGTH_SHORT).show();
-            // TODO: abrir a sequência de cadastro (veículo -> quilometragem -> gastos)
+            Intent intent = new Intent(this, VeiculoActivity.class);
+            startActivity(intent);
         });
 
         btnJaTenhoConta.setOnClickListener(v -> {

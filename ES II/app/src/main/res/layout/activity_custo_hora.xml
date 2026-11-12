@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView android:id="@+id/btnVoltar"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:src="@drawable/ic_back" android:scaleType="center"
+                android:clickable="true" android:focusable="true" android:contentDescription="Voltar" />
+
+            <LinearLayout
+                android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1"
+                android:orientation="horizontal" android:background="@drawable/bg_progress_track"
+                android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="3" android:background="@drawable/bg_progress_fill" />
+                <View android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="3 de 4" android:textColor="@color/texto_2" android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Custo por hora" android:textColor="@color/preto"
+            android:textSize="32sp" android:textStyle="bold" android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Gastos que existem mesmo com a moto parada, divididos pelas suas horas no app."
+            android:textColor="@color/texto_2" android:textSize="16sp"
+            android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card_light"
+            android:padding="16dp" android:layout_marginTop="20dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Seguro" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Mensalidade" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 120/mês" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="IPVA e licenciamento" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="R$ 360 por ano" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 30/mês" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Depreciação" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Estimativa sua: perde R$ 1.800 por ano" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 150/mês" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Celular e internet" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Plano usado no trabalho" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 60/mês" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="MEI (DAS)" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Valor de exemplo: confira o seu" android:textColor="@color/texto_2"
+                        android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 80/mês" android:textColor="@color/preto"
+                    android:textSize="16sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Custo por hora" android:textColor="@color/preto"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="R$ 440/mês ÷ 160 h no app nos últimos 30 dias"
+                        android:textColor="@color/texto_2" android:textSize="13sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="R$ 2,75/h" android:textColor="@color/preto"
+                    android:textSize="22sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnContinuar"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:gravity="center" android:text="Continuar"
+            android:textColor="@color/preto" android:textSize="17sp" android:textStyle="bold"
+            android:background="@drawable/bg_button_verde"
+            android:clickable="true" android:focusable="true" android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
