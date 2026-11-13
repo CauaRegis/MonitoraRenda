@@ -38,11 +38,9 @@ public class HorasSemanaActivity extends AppCompatActivity {
 
         // Continuar: por enquanto só avisa; depois leva pra próxima tela (a home)
         findViewById(R.id.btnContinuar).setOnClickListener(v -> {
-            String horas = tvHoras.getText().toString();
-            Toast.makeText(this, "Horas: " + horas, Toast.LENGTH_SHORT).show();
-            // TODO: abrir a tela inicial (home / tela 1.3)
-            // Intent intent = new Intent(this, MainActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         });
     }
 }

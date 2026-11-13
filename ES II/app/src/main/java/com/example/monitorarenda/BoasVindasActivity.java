@@ -31,8 +31,9 @@ public class BoasVindasActivity extends AppCompatActivity {
         });
 
         btnJaTenhoConta.setOnClickListener(v -> {
-            Toast.makeText(this, "Já tenho conta", Toast.LENGTH_SHORT).show();
-            // TODO: abrir a página inicial (home)
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         });
     }
 }
